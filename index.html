@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- font Awesome - icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p class="subtitle">Manage your tasks efficiently</p>
+        </header>
+
+        <!-- task input form -->
+        <form id="task-form">
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit" id="add-task-btn">
+                    <p>ADD TASK</p>
+                </button>
+            </div>
+        </form>
+
+        <!-- Task controls- filters and sorting -->
+        <div class="task-controls">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button id="sort-btn">
+                <i class="fas fa-sort"></i> Sort by Newest
+            </button>
+        </div>
+
+        <!-- Task list container -->
+        <div class="task-list-container">
+            <ul id="task-list">
+                <!-- All tasks will added here dynamically -->
+            </ul>
+            <p id="empty-list-msg">No tasks to display</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
